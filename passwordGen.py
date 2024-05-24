@@ -1,7 +1,6 @@
 import random
 import tools
 
-
 # User Interface
 print("Welcome to password generator!")
 user_letters_amount = int(input("How many letters do you want your password to have? "))
