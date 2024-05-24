@@ -26,15 +26,14 @@ random.shuffle(password_type)
 
 for element in password_type:
 
-    random_letter_index = random.randint(0, len(tools.letters) - 1)
-    random_char_index = random.randint(0, len(tools.special_characters) - 1)
-    random_number_index = random.randint(0, len(tools.numbers) - 1)
-
     if element == 'letter':
+        random_letter_index = random.randint(0, len(tools.letters) - 1)
         password += tools.letters[random_letter_index]
     elif element == 'special_character':
+        random_char_index = random.randint(0, len(tools.special_characters) - 1)
         password += tools.special_characters[random_number_index]
     elif element == 'number':
+        random_number_index = random.randint(0, len(tools.numbers) - 1)
         password += tools.numbers[random_number_index]
 
 # Result
